@@ -1,16 +1,22 @@
 // external modules
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// This wraps the main application
 import { Provider } from 'react-redux';
+
+// Redux is all about the store below, the store is passed to the provider-this is all done by Redux
 import { createStore, combineReducers } from 'redux';
 
 // internal modules
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
+
+import flatsReducer from './reducers/flats_reducer';
 // State and reducers
 const reducers = combineReducers({
-  changeMe: (state = null, action) => state
+  flats: flatsReducer
 });
 
 // render an instance of the component in the DOM
