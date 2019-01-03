@@ -14,9 +14,12 @@ import '../assets/stylesheets/application.scss';
 
 
 import flatsReducer from './reducers/flats_reducer';
+import selectedFlatReducer from './reducers/selected_flat_reducer';
+
 // State and reducers
 const reducers = combineReducers({
-  flats: flatsReducer
+  flats: flatsReducer,
+  selectedFlat: selectedFlatReducer
 });
 
 // render an instance of the component in the DOM

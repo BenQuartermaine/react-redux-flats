@@ -11,6 +11,8 @@ export default function(state, action) {
   switch(action.type) {
     case 'SET_FLATS': 
       return action.payload;
+    case 'SELECTED_FLAT':
+      return action.payload;
     default:
       return state;
   }
